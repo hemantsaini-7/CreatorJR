@@ -544,6 +544,14 @@
   .booking_sec {
     padding: 35px 0;
   }
+  .price1,
+  .price2,
+  .price3 {
+    font-size: 20px !important;
+  }
+  .basic_btn {
+    font-size: 18px;
+  }
 }
 @media (max-width: 575px) {
   .logo {

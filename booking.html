@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" type="image/png" href="images/icon.png" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <title>Creator Jr</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-select.min.css" rel="stylesheet" />
+    <!-- plugins css -->
+    <link href="css/slick.css" rel="stylesheet" />
+    <link href="css/aos.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="css/fonts.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/css/intlTelInput.css"
+      rel="stylesheet"
+      media="screen"
+    />
+    <link href="css/custom.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+    <link href="css/developer.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="preloader" class="loading_page">
+      <div class="spinner spinner-circle"></div>
+    </div>
+    <section class="booking_sec">
+      <div class="container">
+        <div class="booking_outer">
+          <div class="row">
+            <div class="col-lg-7">
+              <div class="booking_modal">
+                <div class="boking_header">
+                  <a href="index.html" class="booking_logo"
+                    ><img src="images/logo.png" alt=""
+                  /></a>
+                  <h3>
+                    Book Your Free Class in 1 minute
+                    <span>Last 19 Spots Only!</span>
+                  </h3>
+                </div>
+                <div class="form_body">
+                  <form
+                    action="javascript:void(0)"
+                    method="post"
+                    id="register-form"
+                    name="submit-to-google-sheet"
+                  >
+                    <div class="bokking_formArea">
+                      <div class="input_fillOuter">
+                        <div class="input_fill w_100">
+                          <label>Parent Name <span>*</span></label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Your name"
+                            name="name"
+                            id="name"
+                          />
+                        </div>
+                        <div class="input_fill w_50">
+                          <label>Parent Email <span>*</span></label>
+                          <input
+                            type="email"
+                            class="form-control"
+                            placeholder="Your email"
+                            name="email"
+                            id="email"
+                          />
+                        </div>
+                        <div class="input_fill w_50">
+                          <label>Parent mobile <span>*</span></label>
+                          <div class="country_code">
+                            <input
+                              type="tel"
+                              class="form-control"
+                              name="number"
+                              inputmode="decimal"
+                              id="number"
+                            />
+                            <span class="valid-msg hide"></span>
+                            <span class="error-msg hide"></span>
+                          </div>
+                        </div>
+                        <div class="input_fill w_100">
+                          <label>Kid's Name <span>*</span></label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Kids name"
+                            name="kidsname"
+                            id="kids_name"
+                          />
+                        </div>
+                      </div>
+                      <div class="kids_gradeArea">
+                        <label class="kids_hdng"
+                          >Kid's Grade/Class in School? *</label
+                        >
+                        <div class="gradebx_outer">
+                          <div class="grade_item">
+                            <input
+                              type="radio"
+                              name="grade"
+                              value="1"
+                              id="grade_1"
+                            />
+                            <div class="clss_bx">
+                              <h5>Class <span>1</span></h5>
+                            </div>
+                          </div>
+                          <div class="grade_item">
+                            <input
+                              type="radio"
+                              name="grade"
+                              value="2-3"
+                              id="grade_2"
+                            />
+                            <div class="clss_bx">
+                              <h5>Class <span>2-3</span></h5>
+                            </div>
+                          </div>
+                          <div class="grade_item">
+                            <input
+                              type="radio"
+                              name="grade"
+                              value="4-6"
+                              id="grade_4"
+                            />
+                            <div class="clss_bx">
+                              <h5>Class <span>4-6</span></h5>
+                            </div>
+                          </div>
+                          <div class="grade_item">
+                            <input
+                              type="radio"
+                              name="grade"
+                              value="7-9"
+                              id="grade_7"
+                            />
+                            <div class="clss_bx">
+                              <h5>Class <span>7-9</span></h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="lptop_pc_row">
+                        <label class="kids_hdng"
+                          >Do you have laptop/PC at home for class? *</label
+                        >
+                        <ul>
+                          <li>
+                            <label class="radio_check">
+                              <input type="radio" name="pc" value="Yes" />
+                              <span></span>
+                              <i>Yes</i>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="radio_check">
+                              <input type="radio" name="pc" value="No" />
+                              <span></span>
+                              <i>No</i>
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="submit_fill basic_btn">
+                        <input
+                          type="submit"
+                          class="sbmit_btn"
+                          value="Book a FREE class"
+                          name="submit"
+                        />
+                      </div>
+                      <div class="rvw_scss">
+                        <p class="scs_msgg" style="color: #4fd01a"></p>
+                        <p class="err_msgg" style="color: #f00"></p>
+                      </div>
+                      <div class="terms_area d-none">
+                        <p>
+                          By registering here, I agree to WhiteHat
+                          <a href="javascript:void(0);">Terms & Conditions</a>
+                          and <a href="javascript:void(0);">Privacy Policy</a>
+                        </p>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="bokking_iconArea">
+                <div class="icon_row">
+                  <div class="form_icon ban_fill">
+                    <svg viewBox="0 0 512 512">
+                      <use
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="#ban"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="form_icon_text">
+                    <h4>No Promotions Ever!</h4>
+                    <p>
+                      WhiteHat will never call or email you for marketing
+                      offers. Your phone and email is used only to update you on
+                      your kid’s progress.
+                    </p>
+                  </div>
+                </div>
+                <div class="icon_row">
+                  <div class="form_icon lock_fill">
+                    <svg viewBox="0 0 512 512">
+                      <use
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="#lock"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="form_icon_text">
+                    <h4>100% Kid Secure</h4>
+                    <p>
+                      WhiteHat selects only the Top 99.9th percentile of Early
+                      Childhood coding experts, thoroughly vetted with 3rd party
+                      background checks.
+                    </p>
+                  </div>
+                </div>
+                <div class="icon_row">
+                  <div class="form_icon support_fill">
+                    <svg viewBox="0 0 512 512">
+                      <use
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="#support"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="form_icon_text">
+                    <h4>Contact Us - 24x7</h4>
+                    <p>
+                      We’re devoted to our mission of making your kids creators
+                      versus consumers of technology. We’re available 24x7 for
+                      you at
+                      <a href="mailto:support@whitehatjr.com"
+                        >support@whitehatjr.com</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="icon_row">
+                  <div class="form_icon warning_fill">
+                    <svg viewBox="0 0 512 512">
+                      <use
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="#warning"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="form_icon_text">
+                    <h4>For Siblings</h4>
+                    <p>
+                      Please use a distinct parent <span> Email ID</span> and
+                      <span>Mobile Number</span> for each sibling.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- scrollup -->
+    <div class="scrollup">
+      <span> <i class="fas fa-chevron-up"></i></span>
+    </div>
+    <!-- scrollup -->
+    <div class="svg_outer" style="display: none">
+      <svg
+        version="1.1"
+        id="ban"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        viewBox="0 0 512 512"
+        style="enable-background: new 0 0 512 512"
+        xml:space="preserve"
+      >
+        <g>
+          <g>
+            <path
+              d="M256,0C114.84,0,0,114.84,0,256s114.84,256,256,256s256-114.84,256-256S397.16,0,256,0z M256,474.718
+                    C135.4,474.718,37.282,376.6,37.282,256S135.4,37.282,256,37.282S474.718,135.4,474.718,256S376.6,474.718,256,474.718z"
+            />
+          </g>
+        </g>
+        <g>
+          <g>
+            <rect
+              x="24.881"
+              y="237.964"
+              transform="matrix(0.7071 -0.7071 0.7071 0.7071 -106.466 256.1715)"
+              width="462.225"
+              height="37.275"
+            />
+          </g>
+        </g>
+      </svg>
+      <svg
+        version="1.1"
+        id="lock"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        viewBox="0 0 512 512"
+        style="enable-background: new 0 0 512 512"
+        xml:space="preserve"
+      >
+        <g>
+          <path
+            d="M230.792,354.313l-6.729,60.51c-0.333,3.01,0.635,6.031,2.656,8.292c2.021,2.26,4.917,3.552,7.948,3.552h42.667
+                c3.031,0,5.927-1.292,7.948-3.552c2.021-2.26,2.99-5.281,2.656-8.292l-6.729-60.51c10.927-7.948,17.458-20.521,17.458-34.313
+                c0-23.531-19.135-42.667-42.667-42.667S213.333,296.469,213.333,320C213.333,333.792,219.865,346.365,230.792,354.313z
+                 M256,298.667c11.76,0,21.333,9.573,21.333,21.333c0,8.177-4.646,15.5-12.125,19.125c-4.073,1.979-6.458,6.292-5.958,10.781
+                l6.167,55.427h-18.833l6.167-55.427c0.5-4.49-1.885-8.802-5.958-10.781c-7.479-3.625-12.125-10.948-12.125-19.125
+                C234.667,308.24,244.24,298.667,256,298.667z"
+          />
+          <path
+            d="M437.333,192h-32v-42.667C405.333,66.99,338.344,0,256,0S106.667,66.99,106.667,149.333V192h-32
+                C68.771,192,64,196.771,64,202.667v266.667C64,492.865,83.135,512,106.667,512h298.667C428.865,512,448,492.865,448,469.333
+                V202.667C448,196.771,443.229,192,437.333,192z M128,149.333c0-70.583,57.417-128,128-128s128,57.417,128,128V192h-21.333
+                v-42.667c0-58.813-47.854-106.667-106.667-106.667S149.333,90.521,149.333,149.333V192H128V149.333z M341.333,149.333V192
+                H170.667v-42.667C170.667,102.281,208.948,64,256,64S341.333,102.281,341.333,149.333z M426.667,469.333
+                c0,11.76-9.573,21.333-21.333,21.333H106.667c-11.76,0-21.333-9.573-21.333-21.333v-256h341.333V469.333z"
+          />
+        </g>
+      </svg>
+      <svg
+        version="1.1"
+        id="support"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        viewBox="0 0 512 512"
+        style="enable-background: new 0 0 512 512"
+        xml:space="preserve"
+      >
+        <g>
+          <path
+            d="M136,210c-24.814,0-45,20.186-45,45v122c0,24.814,20.186,45,45,45c24.814,0,45-20.186,45-45V255
+            C181,230.186,160.814,210,136,210z"
+          />
+        </g>
+        <g>
+          <path
+            d="M61,255c0-4.327,0.571-8.507,1.278-12.634C44.2,248.209,31,265.001,31,285v62c0,19.999,13.2,36.791,31.278,42.634
+            C61.571,385.507,61,381.327,61,377V255z"
+          />
+        </g>
+        <g>
+          <path
+            d="M376,210c-24.814,0-45,20.186-45,45v122c0,24.814,20.186,45,45,45c4.51,0,8.782-0.868,12.892-2.108
+            C383.308,438.401,366.305,452,346,452h-47.763c-6.213-17.422-22.707-30-42.237-30c-24.814,0-45,20.186-45,45
+            c0,24.814,20.186,45,45,45c19.53,0,36.024-12.578,42.237-30H346c41.353,0,75-33.647,75-75v-30V255
+            C421,230.186,400.814,210,376,210z"
+          />
+        </g>
+        <g>
+          <path
+            d="M449.722,242.366C450.429,246.493,451,250.673,451,255v122c0,4.327-0.571,8.507-1.278,12.634
+            C467.8,383.791,481,366.999,481,347v-62C481,265.001,467.8,248.209,449.722,242.366z"
+          />
+        </g>
+        <g>
+          <path
+            d="M256,0C131.928,0,31,100.928,31,225v0.383c8.937-6.766,19.277-11.717,30.687-13.934C68.698,110.251,153.054,30,256,30
+            s187.302,80.251,194.313,181.448c11.409,2.217,21.749,7.169,30.687,13.934V225C481,100.928,380.072,0,256,0z"
+          />
+        </g>
+      </svg>
+      <svg
+        version="1.1"
+        id="warning"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        viewBox="0 0 512 512"
+        style="enable-background: new 0 0 512 512"
+        xml:space="preserve"
+      >
+        <g>
+          <g>
+            <path
+              d="M256,0C114.497,0,0,114.507,0,256c0,141.503,114.507,256,256,256c141.503,0,256-114.507,256-256
+            C512,114.497,397.493,0,256,0z M256,472c-119.393,0-216-96.615-216-216c0-119.393,96.615-216,216-216
+            c119.393,0,216,96.615,216,216C472,375.393,375.385,472,256,472z"
+            />
+          </g>
+        </g>
+        <g>
+          <g>
+            <path
+              d="M256,128.877c-11.046,0-20,8.954-20,20V277.67c0,11.046,8.954,20,20,20s20-8.954,20-20V148.877
+            C276,137.831,267.046,128.877,256,128.877z"
+            />
+          </g>
+        </g>
+        <g>
+          <g>
+            <circle cx="256" cy="349.16" r="27" />
+          </g>
+        </g>
+      </svg>
+    </div>
+    <!-- jquery.js -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap core JavaScript-->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap-select.min.js" type="text/javascript"></script>
+    <!--plugins-js-->
+    <script src="js/slick.min.js" type="text/javascript"></script>
+    <script src="js/aos.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/intlTelInput.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="js/custom.js" type="text/javascript"></script>
+    <script>
+      $(document).ready(function ($) {
+        $("#register-form").validate({
+          rules: {
+            name: "required",
+            email: {
+              required: true,
+              email: true,
+            },
+            number: {
+              required: true,
+              minlength: 10,
+            },
+            kidsname: "required",
+            grade: "required",
+            pc: "required",
+          },
+          messages: {
+            name: "Please enter parents Name",
+            email: {
+              required: "Please enter email",
+              email: "Please enter valid email",
+            },
+            number: {
+              required: "Please enter number",
+              minlength: "Please enter 10 digit number",
+            },
+            kidsname: "Please enter kids name",
+            grade: "Please select grade",
+            pc: "Please select",
+          },
+          errorPlacement: function (error, element) {
+            if (element.is(":radio")) {
+              error.appendTo(element.parents(".kids_gradeArea"));
+            } else {
+              error.insertAfter(element);
+            }
+          },
+          submitHandler: function (form, e) {
+            var name = $("#name").val();
+            var email = $("#email").val();
+            var number = $("#number").val();
+            var kids_name = $("#kids_name").val();
+            var grade = $("input[name='grade']:checked").val();
+            var data = {
+              name: name,
+              email: email,
+              number: number,
+              kids_name: kids_name,
+              grade: grade,
+            };
+            $.post(ajaxurl, data, function (response) {
+              //alert(response);
+              if (response == "Success") {
+                $(".scs_msgg").html(
+                  "Your review has been added successfully. Awaiting for the approval."
+                );
+                $(".err_msgg").html("");
+              } else {
+                $(".scs_msgg").html("");
+                $(".err_msgg").html(" There is an ajax error!");
+              }
+            });
+          },
+        });
+      });
+    </script>
+    <!--    <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyrV1RghmbdQzio82b3mhX_plWuhcM7_umzizTY2qHWb7-vfssV/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+    })
+    </script> -->
+  </body>
+</html>

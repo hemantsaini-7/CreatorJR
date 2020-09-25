@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CreatorJr</title>
+    <link rel="icon" href="title.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="st2.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <a href="/"><img src="logo.PNG" alt="Logo Image" class="logo" /></a>
+        <h2>Book Free Bootcamp in 1 minute</h2>
+        <small class="small-txt">Last Few Spots Left.</small>
+        <form method="POST" autocomplete="off" name="google-sheet" id="form">
+          <div class="form-div">
+            <label>Parent Name</label>
+            <input
+              type="text"
+              class="text-input"
+              name="ParentName"
+              id="pname"
+            />
+            <small class="errN">Error message</small>
+          </div>
+          <div class="mid-form">
+            <div class="form-div">
+              <label>Parent Email</label>
+              <input type="text" class="text-input" name="Email" id="pemail" />
+              <small class="errEmail">Error message</small>
+            </div>
+            <div class="form-div">
+              <label>Parent Mobile</label>
+              <input
+                type="text"
+                class="text-input"
+                name="Mobile"
+                id="pmobile"
+              />
+              <small class="errM">Error message</small>
+            </div>
+          </div>
+          <div class="form-div">
+            <label>Kid's Name</label>
+            <input type="text" class="text-input" name="KidName" id="kname" />
+            <small class="errK">Error message</small>
+          </div>
+          <div class="form-div-checks">
+            <label>Kid's Grade/Class in School? </label>
+            <div class="boxes">
+              <div class="zbox">
+                <label class="hlabel"
+                  ><input type="radio" name="Class" value="Class KG-1" /><span
+                    >Class KG-1</span
+                  ></label
+                >
+              </div>
+
+              <div class="zbox">
+                <label class="hlabel"
+                  ><input type="radio" name="Class" value="Class 2-3" /><span
+                    >Class 2-3</span
+                  ></label
+                >
+              </div>
+
+              <div class="zbox">
+                <label class="hlabel"
+                  ><input type="radio" name="Class" value="Class 4-6" /><span
+                    >Class 4-6</span
+                  ></label
+                >
+              </div>
+
+              <div class="zbox">
+                <label class="hlabel"
+                  ><input type="radio" name="Class" value="Class 7-9" /><span
+                    >Class 7-9</span
+                  ></label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="form-div-radio">
+            <label>Do you have laptop/PC at home for class?  </label>
+            <div class="enclosed">
+              <div class="rd">
+                <input
+                  type="radio"
+                  style="margin-right: 10px"
+                  id="yes"
+                  name="Options"
+                  value="Yes"
+                />
+                <label for="Yes">Yes</label>
+              </div>
+              <div class="rd">
+                <input
+                  type="radio"
+                  style="margin-right: 10px"
+                  id="no"
+                  name="Options"
+                  value="No"
+                />
+                <label for="no">No</label>
+              </div>
+            </div>
+            <small class="errR">Error message</small><br />
+          </div>
+          <input
+            type="submit"
+            value="Book a FREE class"
+            class="sub-btn"
+            name="submit"
+            id="submitbtn"
+          />
+          <h2 class="successText">SUBMISSION FAILED</h2>
+        </form>
+      </div>
+      <div class="details">
+        <div class="det-sec">
+          <div class="inline-d">
+            <img src="det1.PNG" alt="" />
+            <h4>Free Coding Certificate</h4>
+          </div>
+          <p>
+            Student will receive a coding certificate after the free bootcamp.
+            Updates and progress will be emailed or messaged to you.
+          </p>
+        </div>
+        <div class="det-sec">
+          <div class="inline-d">
+            <img src="det2.PNG" alt="" />
+            <h4>100% Secure</h4>
+          </div>
+          <p>
+            Our teacher selection process ensures we work with only the top
+            teachers. Thoroughly trained and vetted with 3rd party background
+            checks.
+          </p>
+        </div>
+        <div class="det-sec">
+          <div class="inline-d">
+            <img src="det3.PNG" alt="" />
+            <h4>Happy to help – 24×7</h4>
+          </div>
+          <p>
+            We are deeply committed to our mission of building a new generation
+            of creators. We are available 24×7 for you at<a
+              href="/"
+              class="bot-link"
+              >support@creatorjr.com</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="scrolltop float-right">
+        <i class="fa fa-arrow-up arrow" onclick="topFunction()" id="btntop"></i>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

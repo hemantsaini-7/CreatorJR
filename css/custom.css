@@ -1586,3 +1586,7 @@ h3 {
   position: relative;
   top: 3px;
 }
+.arrow {
+  color: #fff;
+  font-size: 20px !important;
+}
